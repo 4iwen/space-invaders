@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>space_invaders</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="background.png" />
+    <None Remove="invader.png" />
+    <None Remove="player.png" />
+    <None Remove="ship.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="background.png" />
+    <Resource Include="invader.png" />
+    <Resource Include="player.png" />
+    <Resource Include="ship.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="images\invader.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
